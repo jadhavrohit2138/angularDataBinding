@@ -1,0 +1,26 @@
+
+<!-- 
+<br><br><input type="text" [(ngModel)]="name" style="height:70px;font-size:14pt;" #newItem><br><br>
+<button type="button" (click)="swapItem(newItem.value)">Swap to left</button>
+
+<app-child [Name]="sendToChild" (getResponse)="getResponse($event)"></app-child>     
+ -->
+
+<!-- <button (click)="sendValues" (click)="swapItem(newItem.value)"> Send Data </button>   -->
+
+<div class="col-12 col-md-12">    
+    <div class="card">       
+      <div class="card-body" style="float: left">    
+        <form>    
+        <div class="order-tracking">    
+          Left Component 
+         <br><input name="yourname" type="text" [(ngModel)]="liveName" value="{{this.liveName}}" /><br>    
+         <button type="button" (click)="submit()" class="btn-btn primary">swap to right</button>  
+         <!-- <button type="button" (click)="onClick()">Ok</button>     -->
+        </div>    
+      </form>    
+      </div>    
+    </div>    
+  </div>    
+  <app-child style="float: right" [Name]="sendToChild" (getResponse)="getResponse($event)"></app-child> 
+  <br>

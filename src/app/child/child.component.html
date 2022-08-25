@@ -1,0 +1,21 @@
+
+
+
+<!-- <br><br><input type="text" style="height:70px;font-size:14pt;" value="rohit" #newItem><br><br>
+<button type="button"  (click)="swapItem(newItem.value)">Swap to right</button>
+ -->
+
+ <div class="col-12 col-md-12">    
+    <div class="card">    
+      <div class="card-header">    
+       Right Component    
+          
+      </div>    
+      <div class="card-body">    
+        <div class="order-tracking">    
+          <input  [(ngModel)]="cname" type="text" value="{{this.Name}}"/><br>
+        </div>    
+        <button type="button" (click)="onClick()">swap to left</button>    
+      </div>    
+    </div>    
+  </div>    
